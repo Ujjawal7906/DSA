@@ -153,9 +153,11 @@ int main(){
     int n;
     cout<<"Enter the number of rows and column: ";
     cin>>n;   
+    int num=1;
     for(int i=1;i<=n;i++){            
         for(int j=1;j<=i;j++){
-            cout<<i<<" ";            
+            cout<<num<<" "; 
+            num++;      
         }
         cout<<endl;
         
