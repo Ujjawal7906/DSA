@@ -45,15 +45,28 @@
 
 //Smallest number in array
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int arr[5]={44,-55,23,87,33};
+//     int smallest= INT32_MAX;
+//     for(int i=0;i<5;i++){
+//         if(arr[i]<smallest){
+//             smallest=arr[i];
+//         }
+//     }
+//     cout<<"Smallest is "<<smallest;
+// }
+
+//Update Array elements
 #include<iostream>
 using namespace std;
 int main(){
     int arr[5]={44,-55,23,87,33};
-    int smallest= INT32_MAX;
+    arr[1]=50;
+
     for(int i=0;i<5;i++){
-        if(arr[i]<smallest){
-            smallest=arr[i];
-        }
+        cout<<arr[i]<<" ";
     }
-    cout<<"Smallest is "<<smallest;
+    return 0;
 }
