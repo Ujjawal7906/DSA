@@ -59,14 +59,31 @@
 // }
 
 //Update Array elements
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int arr[5]={44,-55,23,87,33};
+//     arr[1]=50;
+
+//     for(int i=0;i<5;i++){
+//         cout<<arr[i]<<" ";
+//     }
+//     return 0;
+// }
+
+//Size of Array
+
 #include<iostream>
 using namespace std;
 int main(){
-    int arr[5]={44,-55,23,87,33};
-    arr[1]=50;
+    int arr[5]={2,4,6,12,16};
+    //size of 1 element
+    cout<<"Size of arr[0] is "<<sizeof(arr[0])<<endl;
 
-    for(int i=0;i<5;i++){
-        cout<<arr[i]<<" ";
-    }
+    //Size of array
+    cout<<"Size of arr is "<<sizeof(arr)<<endl;
+
+    //length of array
+    cout<<"length of array is "<<sizeof(arr)/sizeof(arr[0])<<endl;
     return 0;
 }
